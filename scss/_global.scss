@@ -1,0 +1,155 @@
+@use "util" as u;
+
+/* Variables */
+
+:root {
+  --c-neutral-base: #b7b8bc;
+  --c-neutral-bg: #e1e1e1;
+  --c-neutral-dark: #121420;
+  --c-neutral-light: #4e515d;
+  --c-neutral-lighter: #82848c;
+  --c-neutral-main: #191d2d;
+  --c-neutral-white: #fafafa;
+
+  --c-pink-bg: #ffebf1;
+  --c-pink-base: #f8cad7;
+  --c-pink-dark: #a01e43;
+  --c-pink-light: #eb6187;
+  --c-pink-lighter: #f195ae;
+  --c-pink-main: #e42b5f;
+  --c-purple-base: #f2cafb;
+  --c-purple-dark: #8f1da8;
+  --c-purple-light: #d960f4;
+  --c-purple-lighter: #e594f7;
+  --c-purple-main: #cc2af0;
+
+  --c-green-base: #c9ddb1;
+  --c-green-dark: #457c00;
+  --c-green-light: #84bf3b;
+  --c-green-lighter: #a7ce76;
+  --c-green-main: #62b000;
+
+  --f-h1: u.rem(62);
+  --f-h2: u.rem(48);
+  --f-h3: u.rem(40);
+  --f-h4: u.rem(32);
+  --f-h5: u.rem(24);
+  --f-h6: u.rem(20);
+  --f-body: u.rem(16);
+  --f-button: u.rem(15);
+  --f-caption: u.rem(12);
+  --f-link: u.rem(10);
+}
+
+/* Normalization */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--c-c-gray);
+  padding-block-end: 50vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--c-c-blue);
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+  transition-property: color, background-color;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+/* Fonts */
+
+/* woff2: Chrome 26+, Opera 23+, Firefox 39+ */
+/* woff: Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(""), url("/fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("/fonts/NunitoSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("/fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("/fonts/NunitoSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""), url("/fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("/fonts/NunitoSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gullia";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("/fonts/Gullia-Regular.woff2") format("woff2"),
+    url("/fonts/Gullia-Regular.woff") format("woff");
+}
