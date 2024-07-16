@@ -1,2 +1,4 @@
-@use 'global';
-@use 'components';
+@import 'mixins';
+@import 'animations';
+@import 'global';
+@import 'header';

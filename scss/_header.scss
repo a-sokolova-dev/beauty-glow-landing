@@ -1,0 +1,124 @@
+.header {
+  position: relative;
+  z-index: 1;
+  background-color: var(--c-pink-bg);
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--c-neutral-white);
+    opacity: 0;
+
+     /* Force closing the menu on desktop */
+    @include breakpoint-up(large) {
+      visibility: hidden !important;
+    }
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      width: 9.5rem;
+      height: 4.4rem;
+    }
+  }
+
+  /* Mobile Menu Toggle */
+  &__toggle {
+    > span {
+      display: block;
+      width: 1.625rem;
+      height: 0.125rem;
+      background-color: var(--c-pink-dark);
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  
+  /* Hamburger Open Styles */
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  &__menu {
+    position: absolute;
+    left: 50%;
+    width: calc(100% - 3rem);
+    padding: 1.625rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transform: translateX(-50%) translateY(50%);
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: var(--c-neutral-main);
+      text-align: center;
+    }
+
+    /* Force closing the menu on desktop */
+    @include breakpoint-up(large) {
+      visibility: hidden !important;
+    }
+  }
+
+  &__links {
+    a {
+      position: relative;
+      font-size: var(--f-button);
+      color: var(--c-neutral-main);
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+
+      &::before {
+        position: absolute;
+        right: 0;
+        bottom: -1.5rem;
+        left: 0;
+        display: block;
+        height: 0.25rem;
+        content: '';
+        background: linear-gradient(
+          to right,
+          var(--c-pink-main),
+          var(--c-pink-dark)
+        );
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: var(--c-pink-dark);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
