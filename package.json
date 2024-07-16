@@ -13,7 +13,7 @@
     "preview": "vite preview",
     "test:js": "eslint .",
     "test:css": "stylelint **/*.scss",
-    "test": "npm run test:js && test:css/"
+    "test": "npm run test:js && npm run test:css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
