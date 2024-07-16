@@ -8,13 +8,21 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build -m production",
+    "clean": "rm -Rf ./dist/",
+    "preview": "vite preview",
+    "test:js": "eslint .",
+    "test:css": "stylelint **/*.scss",
+    "test": "npm run test:js && test:css/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "sass": "^1.68.0",
+    "eslint": "^8.57.0",
+    "eslint-config": "github:a-sokolova-dev/eslint-config",
+    "stylelint": "^16.6.1",
+    "stylelint-config": "github:a-sokolova-dev/stylelint-config",
     "vite": "^4.4.5"
   }
 }

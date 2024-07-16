@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config",
+  "ignoreFiles": ["dist/**/*"],
+  "rules": {
+    "color-named": "never"
+  }
+}
