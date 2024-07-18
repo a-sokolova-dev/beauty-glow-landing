@@ -1,9 +1,14 @@
 .hero {
   background-color: var(--c-pink-base);
 
-  .container {
+  .container--hero {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
     @include breakpoint-up(large) {
       display: flex;
+      padding-right: 5rem;
+      padding-left: 11rem;
     }
   }
 
@@ -14,28 +19,33 @@
 
   &__image {
     position: relative;
-    min-height: 18rem;
+    height: 18rem;
     background-image: url('/img/hero.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 
     @include breakpoint-up(medium) {
-      min-height: 25rem;
+      height: 25rem;
     }
 
     @include breakpoint-up(large) {
-      flex: 4;
+      flex: 3;
       order: 2;
-      height: 38.75rem;
+      height: 28.4375rem;
       background-image: none;
+    }
+
+    @include breakpoint-up(xlarge) {
+      flex: 4;
+      height: 40.625rem;
     }
 
     &::after {
       position: absolute;
       display: none;
-      width: 38.75rem;
-      height: 40.625rem;
+      width: 27.125rem;
+      height: 28.4375rem;
       content: '';
       background-image: url('/img/hero-desktop.png');
       background-repeat: no-repeat;
@@ -43,12 +53,16 @@
       background-size: contain;
 
       @include breakpoint-up(large) {
-        left: -62%;
+        top: 10%;
+        left: -56%;
         display: block;
       }
 
       @include breakpoint-up(xlarge) {
-        left: -86%;
+        top: -5%;
+        left: -79%;
+        width: 38.75rem;
+        height: 40.625rem;
       }
     }
   }

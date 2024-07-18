@@ -118,13 +118,16 @@ li {
 
 .container {
   max-width: 90rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin: 0 auto;
 
-  @include breakpoint-up(large) {
-    padding-right: 5rem;
-    padding-left: 5rem;
+  &--px {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @include breakpoint-up(large) {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
   }
 }
 
