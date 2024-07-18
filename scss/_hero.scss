@@ -18,8 +18,8 @@
   }
 
   &__image {
-    position: relative;
     height: 18rem;
+    position: relative;
     background-image: url('/img/hero.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,7 +59,7 @@
       }
 
       @include breakpoint-up(xlarge) {
-        top: -5%;
+        top: 0%;
         left: -79%;
         width: 38.75rem;
         height: 40.625rem;
