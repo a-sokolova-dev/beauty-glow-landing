@@ -88,11 +88,11 @@
     display: inline-block;
     width: 6rem;
     height: 3.2rem;
-    padding: 3px;
-    margin: 0 4px;
+    padding: 0.187rem;
+    margin: 0 0.25rem;
     vertical-align: middle;
     border: 1px solid var(--c-pink-main);
-    border-radius: 50px;
+    border-radius: 3.125rem;
   }
 
   &__benefits {
@@ -121,7 +121,7 @@
     font-weight: 400;
     color: var(--c-neutral-main);
     border: 1px solid var(--c-neutral-main);
-    border-radius: 50px;
+    border-radius: 3.125rem;
 
     @include breakpoint-up(large) {
       width: unset;

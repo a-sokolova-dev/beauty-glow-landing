@@ -61,7 +61,7 @@ body {
   padding-block-end: 50vh;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 17px;
+  font-size: var(--f-body);
   line-height: 1.7;
   color: var(--c-neutral-main);
 }
@@ -140,7 +140,7 @@ li {
   color: var(--c-neutral-main);
   cursor: pointer;
   border: 1px solid var(--c-neutral-main);
-  border-radius: 50px;
+  border-radius: 3.125rem;
   transition: opacity 300ms ease-in-out;
 
   > .button-icon {
@@ -183,7 +183,6 @@ h1 {
   font-family: Gullia, sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 2px;
 
   @include breakpoint-up(large) {
     font-size: var(--f-h1);
