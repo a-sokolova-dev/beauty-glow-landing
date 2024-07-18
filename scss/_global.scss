@@ -120,6 +120,14 @@ li {
   max-width: 90rem;
   margin: 0 auto;
 
+  &--all {
+    padding: 1rem;
+
+    @include breakpoint-up(large) {
+      padding: 5rem;
+    }
+  }
+
   &--px {
     padding-right: 1rem;
     padding-left: 1rem;
