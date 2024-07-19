@@ -64,6 +64,7 @@ body {
   font-size: var(--f-body);
   line-height: 1.7;
   color: var(--c-neutral-main);
+  background-color: var(--c-pink-base);
 }
 
 h1,
@@ -122,6 +123,7 @@ li {
 
   &--all {
     padding: 1rem;
+    padding: 4rem 1rem;
 
     @include breakpoint-up(large) {
       padding: 5rem;
@@ -153,6 +155,10 @@ li {
   border: 1px solid var(--c-neutral-main);
   border-radius: 3.125rem;
   transition: opacity 300ms ease-in-out;
+
+  &--round {
+    padding: 0.75rem;
+  }
 
   > .button-icon {
     display: inline-block;
@@ -203,9 +209,20 @@ h1 {
 h2 {
   font-family: Gullia, sans-serif;
   font-size: 1.875rem;
+  font-weight: 400;
 
   @include breakpoint-up(large) {
     font-size: var(--f-h3);
+  }
+}
+
+h3 {
+  font-family: Gullia, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @include breakpoint-up(large) {
+    font-size: var(--f-h6);
   }
 }
 
