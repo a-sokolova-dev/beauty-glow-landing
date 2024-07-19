@@ -40,7 +40,7 @@
           <a href="#">Contact Us</a>
         </div>
 
-        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <a id="btn_hamburger" href="#" class="header__toggle hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
@@ -236,61 +236,90 @@
       <!--                Testimonials                  -->
       <!-- ============================================ -->
 
-      <section id="testimonials">
-        <h2>Hear What Others Are Saying!</h2>
-        <p>
-          Discover why our customers are loving our products and join the
-          glowing reviews!
-        </p>
-        <div>
-          <img src="" alt="left arrow" />
-          <img src="" alt="right arrow" />
-        </div>
-        <div>
-          <article>
-            <img src="" alt="Jenny Wilson photo" />
-            <p>Jenny Wilson</p>
-            <div>
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" />
+      <section class="testimonials" id="testimonials">
+        <div class="container container--pall">
+          <h2>Hear What Others Are Saying!</h2>
+          <p class="testimonials__text">
+            Discover why our customers are loving our products and join the
+            glowing reviews!
+          </p>
+          <div class="carousel-wrapper">
+            <div class="testimonials__buttons">
+              <button class="button button--round" id="btn_previous">
+                <img src="/icons/arrow-left.svg" alt="left arrow" />
+              </button>
+              <button class="button button--round" id="btn_next">
+                <img src="/icons/arrow-right.svg" alt="right arrow" />
+              </button>
             </div>
-            <p>
-              GlowGenics skincare range has truly elevated my beauty routine.
-              Their products are luxurious, effective, and have given my skin a
-              radiant glow like never before. I'm thrilled to have discovered
-              such a game-changer!
-            </p>
-          </article>
-          <article>
-            <img src="" alt="Leslie Alexander photo" />
-            <p>Leslie Alexander</p>
-            <div>
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" />
-            </div>
-            <p>
-              GlowGenics products have transformed my skincare routine. My
-              complexion has never looked healthier or felt smoother. I highly
-              recommend their products to anyone seeking radiant, glowing skin!
-            </p>
-          </article>
-          <article>
-            <img src="" alt="Leslie Alexander photo" />
-            <p>Kristin Watson</p>
-            <div>
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" /><img alt="" src="star icon" />
-              <img alt="" src="star icon" />
-            </div>
-            <p>
-              GlowGenics skincare line has truly revolutionized my routine,
-              leaving my skin radiant and rejuvenated. Their products are a
-              must-have for anyone looking to achieve a luminous complexion. I
-              couldn't be happier with the results!
-            </p>
-          </article>
+            <ul class="carousel">
+              <li class="item">
+                <article class="testimonials__card">
+                  <img src="/img/testimonial-1.jpg" alt="Jenny Wilson photo" />
+                  <p class="testimonials__name">Jenny Wilson</p>
+                  <div class="testimonials__stars"></div>
+                  <p class="testimonials__review">
+                    GlowGenics skincare range has truly elevated my beauty
+                    routine. Their products are luxurious, effective, and have
+                    given my skin a radiant glow like never before. I'm thrilled
+                    to have discovered such a game-changer!
+                  </p>
+                  <div class="testimonials__ornament"></div>
+                </article>
+              </li>
+              <li class="item">
+                <article class="testimonials__card">
+                  <img
+                    src="/img/testimonial-2.jpg"
+                    alt="Leslie Alexander photo"
+                  />
+                  <p class="testimonials__name">Leslie Alexander</p>
+                  <div class="testimonials__stars"></div>
+                  <p class="testimonials__review">
+                    GlowGenics products have transformed my skincare routine. My
+                    complexion has never looked healthier or felt smoother. I
+                    highly recommend their products to anyone seeking radiant,
+                    glowing skin!
+                  </p>
+                  <div class="testimonials__ornament"></div>
+                </article>
+              </li>
+              <li class="item">
+                <article class="testimonials__card">
+                  <img
+                    src="/img/testimonial-3.jpg"
+                    alt="Kristin Watson photo"
+                  />
+                  <p class="testimonials__name">Kristin Watson</p>
+                  <div class="testimonials__stars"></div>
+                  <p class="testimonials__review">
+                    GlowGenics skincare line has truly revolutionized my
+                    routine, leaving my skin radiant and rejuvenated. Their
+                    products are a must-have for anyone looking to achieve a
+                    luminous complexion. I couldn't be happier with the results!
+                  </p>
+                  <div class="testimonials__ornament"></div>
+                </article>
+              </li>
+              <li class="item">
+                <article class="testimonials__card">
+                  <img
+                    src="/img/testimonial-4.jpg"
+                    alt="Emily Thompson photo"
+                  />
+                  <p class="testimonials__name">Emily Thompson</p>
+                  <div class="testimonials__stars"></div>
+                  <p class="testimonials__review">
+                    GlowGenics skincare products have given my skin a radiant,
+                    glowing look that I adore. Using them makes me feel happier
+                    and more energized every day! I can't recommend them enough
+                    for anyone looking to enhance their natural beauty.
+                  </p>
+                  <div class="testimonials__ornament"></div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
