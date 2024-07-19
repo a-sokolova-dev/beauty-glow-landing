@@ -122,7 +122,6 @@ li {
   margin: 0 auto;
 
   &--all {
-    padding: 1rem;
     padding: 4rem 1rem;
 
     @include breakpoint-up(large) {
@@ -150,9 +149,9 @@ li {
   overflow: hidden;
   font-size: var(--f-button);
   font-weight: 600;
-  color: var(--c-neutral-main);
+  color: currentcolor;
   cursor: pointer;
-  border: 1px solid var(--c-neutral-main);
+  border: 1px solid currentcolor;
   border-radius: 3.125rem;
   transition: opacity 300ms ease-in-out;
 
@@ -164,6 +163,7 @@ li {
     display: inline-block;
     width: 1rem;
     height: 1rem;
+    margin-left: 0.25rem;
     vertical-align: middle;
   }
 
@@ -228,6 +228,10 @@ h3 {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.accent {
+  color: var(--c-pink-main);
 }
 
 /* Fonts */
