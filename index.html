@@ -324,23 +324,56 @@
       </section>
 
       <!-- ============================================ -->
-      <!--                  Innovation                  -->
+      <!--                  Contact                     -->
       <!-- ============================================ -->
 
-      <section id="contacts">
-        <h2>Need Assistance?<br />We're Here to Help!</h2>
-        <p>
-          Our friendly team is exited to makeup your questions with our beauty
-          expert answers.
-        </p>
-        <span>
-          <span></span>
-          We’re having 5k+ happy beautiful faces.
-        </span>
-        <div>
-          <h3>Let’s get in touch.</h3>
-          <form></form>
-          <button>Let’s connect <img src="" alt="send icon" /></button>
+      <section class="contact" id="contact">
+        <div class="container container--pall contact__grid">
+          <div class="contact__text">
+            <h2>Need Assistance?<br />We're Here to Help!</h2>
+            <p>
+              Our friendly team is exited to makeup your questions with our
+              beauty expert answers.
+            </p>
+            <div class="contact__badges">
+              <ul class="contact__avatar-list">
+                <li class="contact__avatar">
+                  <img src="/img/customer-1.jpg" alt="customer avatar" />
+                </li>
+                <li class="contact__avatar">
+                  <img src="/img/customer-2.jpg" alt="customer avatar" />
+                </li>
+                <li class="contact__avatar">
+                  <img src="/img/customer-3.jpg" alt="customer avatar" />
+                </li>
+                <li class="contact__avatar avatar--empty">5K+</li>
+              </ul>
+              <span>We’re having 5k+ happy<br />beautiful faces.</span>
+            </div>
+          </div>
+          <div class="contact__form-wrapper">
+            <h3 class="accent">Let’s get in touch.</h3>
+            <form class="contact__form">
+              <input type="text" id="name" placeholder="Your name" required />
+              <input type="email" id="email" placeholder="Your email" required/>
+              <input type="phone" id="phone" placeholder="Your phone number" />
+              <input
+                type="text"
+                id="subject"
+                placeholder="Reason for contact"
+                required
+              />
+              <input type="text" id="message" placeholder="Message" required/>
+              <button class="button accent" type="submit">
+                Let’s connect
+                <img
+                  src="/icons/send.svg"
+                  alt="send icon"
+                  class="button-icon"
+                />
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 

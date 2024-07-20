@@ -1,0 +1,114 @@
+.contact {
+  background-color: var(--c-pink-bg);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+
+    > p {
+      max-width: 80%;
+      margin: auto;
+      margin-top: 1.5rem;
+      font-weight: 300;
+
+      @include breakpoint-up(large) {
+        max-width: none;
+        margin: unset;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &__badges {
+    display: flex;
+    align-items: center;
+    width: 21.75rem;
+    padding: 1rem 1.5rem 1rem 1rem;
+    margin-top: 1.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    background-color: var(--c-neutral-white);
+    border-radius: 4rem;
+
+    &:hover .avatar:nth-child(n + 2) {
+      margin-left: -1.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      margin-top: 2.75rem;
+      margin-right: unset;
+      margin-left: unset;
+    }
+  }
+
+  &__avatar-list {
+    display: inline-flex;
+    width: 7.75rem;
+  }
+
+  &__avatar {
+    position: relative;
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    overflow: hidden;
+    border: 1px solid var(--c-pink-base);
+    border-radius: 50%;
+    transition: 0.2s ease;
+
+    &:nth-child(n + 2) {
+      margin-left: -1.5rem;
+    }
+  }
+
+  .avatar--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: var(--c-pink-bg);
+  }
+
+  &__form-wrapper {
+    padding: 2.75rem 1.5rem;
+    background-color: var(--c-neutral-white);
+    border-radius: 0.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+
+    @include breakpoint-up(large) {
+      align-items: start;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.625rem 0.25rem 0.25rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: var(--f-body);
+      font-weight: 300;
+      color: var(--c-neutral-light);
+      background-color: var(--c-neutral-white);
+      border-color: var(--c-neutral-base);
+      border-width: 0 0 1px;
+    }
+  }
+}
