@@ -1,0 +1,63 @@
+.newsletter {
+  position: relative;
+
+  &__popup {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: calc(min(62.5rem, 90%));
+    padding: 5rem 2.5rem;
+    margin: auto;
+    background-color: var(--c-neutral-white);
+    border-radius: 2.5rem;
+    box-shadow: 0 25px 55px rgb(126 126 126 / 0.25);
+    transform: translateY(50%);
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      gap: 3.5rem;
+      align-items: center;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+
+      > input {
+        height: 4.25rem;
+        padding-right: 9.125rem;
+      }
+
+      > .button-newsletter {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  }
+
+  &__input {
+    padding: 1rem 1rem 1rem 1.25rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: var(--f-body);
+    font-weight: 300;
+    color: var(--c-neutral-light);
+    background-color: var(--c-neutral-white);
+    border: 1px solid var(--c-neutral-base);
+    border-radius: 1.25rem;
+  }
+
+  .button-newsletter {
+    font-weight: 300;
+
+    @include breakpoint-up(large) {
+      padding: 0.5rem 1.25rem;
+    }
+  }
+}
