@@ -354,16 +354,23 @@
           <div class="contact__form-wrapper">
             <h3 class="accent">Let’s get in touch.</h3>
             <form class="contact__form">
-              <input type="text" id="name" placeholder="Your name" required />
-              <input type="email" id="email" placeholder="Your email" required/>
-              <input type="phone" id="phone" placeholder="Your phone number" />
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <input type="phone" id="phone" name="phone" placeholder="Your phone number" />
               <input
                 type="text"
                 id="subject"
+                name="subject"
                 placeholder="Reason for contact"
                 required
               />
-              <input type="text" id="message" placeholder="Message" required/>
+              <input type="text" id="message" name="message" placeholder="Message" required />
               <button class="button accent" type="submit">
                 Let’s connect
                 <img
