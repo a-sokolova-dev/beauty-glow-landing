@@ -3,7 +3,6 @@
 
   a,
   p {
-    font-weight: 300;
     color: var(--c-neutral-light);
   }
 
@@ -30,8 +29,8 @@
 
   &__socials {
     display: inline-flex;
-    align-items: center;
     gap: 2rem;
+    align-items: center;
   }
 
   &__bottom {
