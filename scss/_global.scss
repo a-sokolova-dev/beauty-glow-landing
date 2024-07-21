@@ -58,7 +58,6 @@ html {
 
 body {
   min-height: 100vh;
-  padding-block-end: 50vh;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
   font-size: var(--f-body);
@@ -183,6 +182,7 @@ li {
 }
 
 /* Visibility */
+
 .hide-for-mobile {
   @include breakpoint-down(medium) {
     display: none;

@@ -1,6 +1,11 @@
+/* Global styles & presets */
+
 @import 'mixins';
 @import 'animations';
 @import 'global';
+
+/* Components */
+
 @import 'header';
 @import 'hero';
 @import 'offers';
@@ -9,3 +14,4 @@
 @import 'testimonials';
 @import 'contact';
 @import 'newsletter';
+@import 'footer';
