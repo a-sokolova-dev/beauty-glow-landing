@@ -17,15 +17,6 @@
     @include breakpoint-up(large) {
       text-align: left;
     }
-
-    > p {
-      margin-top: 1.5rem;
-      font-weight: 300;
-
-      @include breakpoint-up(large) {
-        margin-top: 0.5rem;
-      }
-    }
   }
 
   &__badges {

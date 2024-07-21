@@ -68,13 +68,6 @@ body {
 
 h1,
 h2,
-h3 {
-  line-height: 1.1;
-  color: var(--c-neutral-main);
-}
-
-h1,
-h2,
 h3,
 p {
   margin: 0;
@@ -197,22 +190,36 @@ li {
 
 /* Text */
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: Gullia, sans-serif;
   font-size: 3rem;
   font-weight: 400;
+  color: var(--c-neutral-main);
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-family: Gullia, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.15;
 
   @include breakpoint-up(large) {
+    margin-bottom: 0.75rem;
     font-size: var(--f-h1);
   }
 }
 
 h2 {
+  margin-bottom: 1.25rem;
   font-family: Gullia, sans-serif;
   font-size: 1.875rem;
   font-weight: 400;
 
   @include breakpoint-up(large) {
+    margin-bottom: 0.75rem;
     font-size: var(--f-h3);
   }
 }

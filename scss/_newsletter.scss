@@ -1,6 +1,10 @@
 .newsletter {
   position: relative;
 
+  h2 {
+    margin-bottom: 0;
+  }
+
   &__popup {
     display: flex;
     flex-direction: column;

@@ -71,24 +71,14 @@
       margin-top: 6.8125rem;
       text-align: left;
     }
+  }
 
-    > p {
-      max-width: 80%;
-      padding-top: 1.75rem;
-      margin: auto;
-      font-size: var(--f-body);
-      font-weight: 300;
+  &__description {
+    margin: auto auto 1.25rem;
 
-      @include breakpoint-up(large) {
-        max-width: 60%;
-        padding-top: 0.75rem;
-        margin: unset;
-        text-align: left;
-      }
-    }
-
-    .button {
-      margin-top: 1.25rem;
+    @include breakpoint-up(large) {
+      max-width: 60%;
+      margin: 0 0 1.25rem;
     }
   }
 
