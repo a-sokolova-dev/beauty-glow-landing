@@ -5,14 +5,11 @@
   }
 
   &__text {
-    max-width: 80%;
     padding-top: 1.25rem;
-    margin: auto;
     font-weight: 300;
     color: var(--c-neutral-light);
 
     @include breakpoint-up(large) {
-      max-width: none;
       padding-top: 0.25rem;
     }
   }

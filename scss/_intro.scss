@@ -23,11 +23,9 @@
   }
 
   &__text {
-    max-width: 80%;
     text-align: center;
 
     @include breakpoint-up(large) {
-      max-width: none;
       text-align: left;
     }
 
