@@ -5,6 +5,7 @@
   }
 
   &__description {
+    margin-bottom: 2rem;
     color: var(--c-neutral-light);
   }
 
@@ -12,7 +13,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem 1.25rem;
-    margin-top: 2rem;
 
     @include breakpoint-up(large) {
       grid-template-columns: repeat(2, 1fr);
@@ -42,18 +42,20 @@
       margin-bottom: 0.25rem;
     }
 
-    p { 
+    p {
+      margin-bottom: 0.75rem;
       color: var(--c-neutral-light);
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 0;
+      }
     }
 
     .button {
-      margin-top: 0.75rem;
-
       @include breakpoint-up(medium) {
         position: absolute;
         right: 1.5rem;
         bottom: 2.375rem;
-        margin-top: 0;
       }
     }
   }

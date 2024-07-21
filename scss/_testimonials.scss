@@ -5,7 +5,12 @@
   }
 
   &__description {
+    margin-bottom: 6rem;
     color: var(--c-neutral-light);
+
+    @include breakpoint-up(large) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__buttons {
@@ -38,12 +43,12 @@
     > img {
       width: 8rem;
       height: 8rem;
+      margin-bottom: 1rem;
       border-radius: 50%;
     }
   }
 
   &__name {
-    margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
   }
@@ -51,11 +56,11 @@
   &__stars {
     width: 6rem;
     height: 1rem;
+    margin-bottom: 2rem;
     background-image: url('/icons/stars.svg');
   }
 
   &__review {
-    margin-top: 2rem;
     margin-bottom: 3rem;
   }
 
@@ -71,11 +76,6 @@
 
   .carousel-wrapper {
     position: relative;
-    margin-top: 6rem;
-
-    @include breakpoint-up(large) {
-      margin-top: 2rem;
-    }
   }
 
   .carousel {

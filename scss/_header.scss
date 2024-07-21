@@ -64,10 +64,10 @@
   
   &__menu {
     position: absolute;
+    top: 0;
     left: 50%;
     width: calc(100% - 3rem);
     padding: 1.625rem;
-    margin-top: 1rem;
     border-radius: 5px;
     transform: translateX(-50%) translateY(50%);
 

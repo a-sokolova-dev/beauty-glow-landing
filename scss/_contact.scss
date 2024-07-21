@@ -27,8 +27,8 @@
     margin-top: 1.75rem;
     margin-right: auto;
     margin-left: auto;
-    text-align: left;
     font-weight: 400;
+    text-align: left;
     background-color: var(--c-neutral-white);
     border-radius: 4rem;
 
@@ -75,13 +75,16 @@
     padding: 2.75rem 1.5rem;
     background-color: var(--c-neutral-white);
     border-radius: 0.5rem;
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 1.5rem;
 
     @include breakpoint-up(large) {
       align-items: start;
