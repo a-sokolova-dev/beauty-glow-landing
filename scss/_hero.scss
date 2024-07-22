@@ -44,7 +44,10 @@
       width: 27.125rem;
       height: 28.4375rem;
       content: '';
-      background-image: url('/img/hero-desktop.png');
+      background-image: image-set(
+        url('/img/hero-desktop.webp') type('image/webp'),
+        url('/img/hero-desktop.png') type('image/jpeg')
+      );
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: contain;

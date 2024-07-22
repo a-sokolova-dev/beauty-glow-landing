@@ -8,7 +8,10 @@
   background-size: cover;
 
   @include breakpoint-up(medium) {
-    background-image: url('/img/upcoming-bg.jpg');
+    background-image: image-set(
+      url('/img/upcoming-bg-desktop.webp') type('image/webp'),
+      url('/img/upcoming-bg-desktop.jpg') type('image/jpeg')
+    );
   }
 
   .container--upcoming {
