@@ -31,6 +31,11 @@
 
   /* Mobile Menu Toggle */
   &__toggle {
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+
     > span {
       display: block;
       width: 1.625rem;

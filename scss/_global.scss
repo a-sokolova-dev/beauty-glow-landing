@@ -84,11 +84,6 @@ a:hover {
   cursor: pointer;
 }
 
-button:hover {
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
 img {
   display: block;
   width: 100%;
@@ -140,6 +135,7 @@ li {
   display: inline-block;
   padding: 0.75rem 1.25rem;
   overflow: hidden;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: var(--f-button);
   font-weight: 600;
   color: currentcolor;
@@ -242,6 +238,10 @@ h3 {
 
 .accent {
   color: var(--c-pink-main);
+}
+
+.accent-dark {
+  color: var(--c-pink-dark);
 }
 
 /* Fonts */
