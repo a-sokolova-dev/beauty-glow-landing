@@ -1,8 +1,12 @@
 .upcoming {
-  background-image: url('/img/upcoming-bg.jpg');
+  background-image: url('/img/upcoming-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  @include breakpoint-up(medium) {
+    background-image: url('/img/upcoming-bg.jpg');
+  }
 
   .container--upcoming {
     padding: 4rem 1rem;
