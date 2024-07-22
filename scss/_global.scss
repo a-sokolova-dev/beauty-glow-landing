@@ -144,6 +144,7 @@ li {
   font-weight: 600;
   color: currentcolor;
   cursor: pointer;
+  user-select: none;
   background: transparent;
   border: 1px solid currentcolor;
   border-radius: 3.125rem;
@@ -261,7 +262,7 @@ h3 {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('/fonts/NunitoSans-Regular.woff2') format('woff2'),
+  src: url('/fonts/NunitoSans-Regular.woff2') format('woff2'),
     url('/fonts/NunitoSans-Regular.woff') format('woff');
   font-display: swap;
 }
@@ -270,7 +271,7 @@ h3 {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 600;
-  src: local(''), url('/fonts/NunitoSans-SemiBold.woff2') format('woff2'),
+  src: url('/fonts/NunitoSans-SemiBold.woff2') format('woff2'),
     url('/fonts/NunitoSans-SemiBold.woff') format('woff');
   font-display: swap;
 }
@@ -279,7 +280,7 @@ h3 {
   font-family: Gullia;
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('/fonts/Gullia-Regular.woff2') format('woff2'),
+  src: url('/fonts/Gullia-Regular.woff2') format('woff2'),
     url('/fonts/Gullia-Regular.woff') format('woff');
   font-display: swap;
 }

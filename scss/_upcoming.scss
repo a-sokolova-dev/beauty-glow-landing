@@ -1,5 +1,8 @@
 .upcoming {
-  background-image: url('/img/upcoming-bg-mobile.jpg');
+  background-image: image-set(
+    url('/img/upcoming-bg.webp') type('image/webp'),
+    url('/img/upcoming-bg.jpg') type('image/jpeg')
+  );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

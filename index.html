@@ -14,19 +14,22 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#b91d47" />
     <meta name="theme-color" content="#ffffff" />
-
     <title>GlowGenics | Helsinki, FI</title>
   </head>
-  <body>
+  <body style="visibility: hidden">
     <header class="header">
       <!-- ============================================ -->
       <!--                   Navigation                 -->
       <!-- ============================================ -->
       <nav class="container container--px header__nav">
         <div class="overlay has-fade"></div>
-
         <a class="header__logo" href="#">
-          <img src="/icons/logo.svg" alt="GlowGenics logo" />
+          <img
+            src="/icons/logo.svg"
+            alt="GlowGenics logo"
+            width="150px"
+            height="66px"
+          />
         </a>
 
         <div class="header__links hide-for-mobile">
@@ -63,16 +66,34 @@
           <div class="hero__image"></div>
           <div class="hero__text">
             <h1>
-              <span class="no-wrap">
-                Disc<img
-                  class="hero__letter"
-                  src="/img/letter-1.png"
-                  alt="o"
-                />ver
+              <!-- prettier-ignore -->
+              <span class="no-wrap"><!--
+                -->Disc<!--
+                --><picture><!--
+                  --><source srcset="/img/letter-1.webp" type="image/webp" /><!--
+                    --><img
+                      class="hero__letter"
+                      src="/img/letter-1.png"
+                      alt="o"
+                      width="96px"
+                      height="51px" /><!--
+                --></picture><!--
+                -->ver
               </span>
               Your Signature
-              <span class="no-wrap">
-                Gl<img class="hero__letter" src="/img/letter-2.png" alt="o" />w
+              <!-- prettier-ignore -->
+              <span class="no-wrap"><!--
+                -->Gl<!--
+                --><picture><!--
+                  --><source srcset="/img/letter-2.webp" type="image/webp" /><!--
+                  --><img
+                    class="hero__letter"
+                    src="/img/letter-2.png"
+                    alt="o"
+                    width="96px"
+                    height="51px" /><!--
+                --></picture><!--
+                -->w
               </span>
             </h1>
             <p class="hero__description">
@@ -85,6 +106,8 @@
                 class="button-icon"
                 src="/icons/basket.svg"
                 alt="basket icon"
+                width="16px"
+                height="16px"
               />
             </a>
             <div class="hero__benefits">
@@ -93,6 +116,8 @@
                   class="badge-icon"
                   src="/icons/truck.svg"
                   alt="truck icon"
+                  width="48px"
+                  height="48px"
                 />
                 <div>
                   <p class="hero__badge-heading">Free Shipping</p>
@@ -104,6 +129,8 @@
                   class="badge-icon"
                   src="/icons/return.svg"
                   alt="package return icon"
+                  width="48px"
+                  height="48px"
                 />
                 <div>
                   <p class="hero__badge-heading">Easy Returns</p>
@@ -115,6 +142,8 @@
                   class="badge-icon"
                   src="/icons/checkout.svg"
                   alt="checkout icon"
+                  width="48px"
+                  height="48px"
                 />
                 <div>
                   <p class="hero__badge-heading">100 Authentic</p>
@@ -139,31 +168,70 @@
           <div class="deals__grid">
             <div class="grid-item">
               <article class="deals__card">
-                <img src="/img/mockup.png" alt="product mockup" />
+                <picture>
+                  <source srcset="/img/mockup.webp" type="image/webp" />
+                  <img
+                    src="/img/mockup.png"
+                    alt="product mockup"
+                    width="373px"
+                    height="373px"
+                  />
+                </picture>
                 <h3>50% Off on Creams</h3>
                 <p>Grab exclusive discount curated for you.</p>
                 <a class="button button--round" href="#contact">
-                  <img src="/icons/buy.svg" alt="buy icon" />
+                  <img
+                    src="/icons/buy.svg"
+                    alt="buy icon"
+                    width="16px"
+                    height="16px"
+                  />
                 </a>
               </article>
             </div>
             <div class="grid-item">
               <article class="deals__card">
-                <img src="/img/mockup.png" alt="product mockup" />
+                <picture>
+                  <source srcset="/img/mockup.webp" type="image/webp" />
+                  <img
+                    src="/img/mockup.png"
+                    alt="product mockup"
+                    width="373px"
+                    height="373px"
+                  />
+                </picture>
                 <h3>50% Off on Creams</h3>
                 <p>Grab exclusive discount curated for you.</p>
                 <a class="button button--round" href="#contact">
-                  <img src="/icons/buy.svg" alt="buy icon" />
+                  <img
+                    src="/icons/buy.svg"
+                    alt="buy icon"
+                    width="16px"
+                    height="16px"
+                  />
                 </a>
               </article>
             </div>
             <div class="grid-item">
               <article class="deals__card">
-                <img src="/img/mockup.png" alt="product mockup" />
+                <picture>
+                  <source srcset="/img/mockup.webp" type="image/webp" />
+                  <img
+                    src="/img/mockup.png"
+                    alt="product mockup"
+                    width="373px"
+                    height="373px"
+                  />
+                </picture>
                 <h3>50% Off on Creams</h3>
                 <p>Grab exclusive discount curated for you.</p>
                 <a class="button button--round" href="#contact">
-                  <img src="/icons/buy.svg" alt="buy icon" />
+                  <img
+                    src="/icons/buy.svg"
+                    alt="buy icon"
+                    width="16px"
+                    height="16px"
+                  />
                 </a>
               </article>
             </div>
@@ -176,7 +244,16 @@
       <!-- ============================================ -->
       <section class="intro" id="intro">
         <div class="container container--pall container--intro">
-          <img class="intro__image" src="/img/product.png" alt="product" />
+          <picture>
+            <source srcset="/img/product.webp" type="image/webp" />
+            <img
+              class="intro__image"
+              src="/img/product.png"
+              alt="product"
+              width="630px"
+              height="650px"
+            />
+          </picture>
           <div class="intro__text">
             <h2>
               GlowGenics Sets the Standard in
@@ -223,6 +300,8 @@
                 class="button-icon"
                 src="/icons/sparkle.svg"
                 alt="sparkle icon"
+                width="16px"
+                height="16px"
               />
             </a>
           </div>
@@ -243,22 +322,44 @@
           <div class="carousel-wrapper">
             <div class="testimonials__buttons">
               <button class="button button--round" id="btn_previous">
-                <img src="/icons/arrow-left.svg" alt="left arrow" />
+                <img
+                  src="/icons/arrow-left.svg"
+                  alt="left arrow"
+                  width="16px"
+                  height="16px"
+                />
               </button>
               <button class="button button--round" id="btn_next">
-                <img src="/icons/arrow-right.svg" alt="right arrow" />
+                <img
+                  src="/icons/arrow-right.svg"
+                  alt="right arrow"
+                  width="16px"
+                  height="16px"
+                />
               </button>
             </div>
             <ul class="carousel">
               <li class="item">
                 <article class="testimonials__card">
-                  <img
-                    class="testimonials__avatar"
-                    src="/img/testimonial-1.jpg"
-                    alt="Jenny Wilson photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="/img/testimonial-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="testimonials__avatar"
+                      src="/img/testimonial-1.jpg"
+                      alt="Jenny Wilson photo"
+                      width="128px"
+                      height="128px"
+                    />
+                  </picture>
                   <h3 class="testimonials__name">Jenny Wilson</h3>
-                  <img class="testimonials__stars" src="/icons/stars.svg" alt="5 star raiting"/>
+                  <img
+                    class="testimonials__stars"
+                    src="/icons/stars.svg"
+                    alt="5 star raiting"
+                  />
                   <p class="testimonials__review">
                     GlowGenics skincare range has truly elevated my beauty
                     routine. Their products are luxurious, effective, and have
@@ -270,13 +371,25 @@
               </li>
               <li class="item">
                 <article class="testimonials__card">
-                  <img
-                    class="testimonials__avatar"
-                    src="/img/testimonial-2.jpg"
-                    alt="Leslie Alexander photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="/img/testimonial-2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="testimonials__avatar"
+                      src="/img/testimonial-2.jpg"
+                      alt="Leslie Alexander photo"
+                      width="128px"
+                      height="128px"
+                    />
+                  </picture>
                   <h3 class="testimonials__name">Leslie Alexander</h3>
-                  <img class="testimonials__stars" src="/icons/stars.svg" alt="5 star raiting"/>
+                  <img
+                    class="testimonials__stars"
+                    src="/icons/stars.svg"
+                    alt="5 star raiting"
+                  />
                   <p class="testimonials__review">
                     GlowGenics products have transformed my skincare routine. My
                     complexion has never looked healthier or felt smoother. I
@@ -288,13 +401,25 @@
               </li>
               <li class="item">
                 <article class="testimonials__card">
-                  <img
-                    class="testimonials__avatar"
-                    src="/img/testimonial-3.jpg"
-                    alt="Kristin Watson photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="/img/testimonial-3.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="testimonials__avatar"
+                      src="/img/testimonial-3.jpg"
+                      alt="Kristin Watson photo"
+                      width="128px"
+                      height="128px"
+                    />
+                  </picture>
                   <h3 class="testimonials__name">Kristin Watson</h3>
-                  <img class="testimonials__stars" src="/icons/stars.svg" alt="5 star raiting"/>
+                  <img
+                    class="testimonials__stars"
+                    src="/icons/stars.svg"
+                    alt="5 star raiting"
+                  />
                   <p class="testimonials__review">
                     GlowGenics skincare line has truly revolutionized my
                     routine, leaving my skin radiant and rejuvenated. Their
@@ -306,13 +431,25 @@
               </li>
               <li class="item">
                 <article class="testimonials__card">
-                  <img
-                    class="testimonials__avatar"
-                    src="/img/testimonial-4.jpg"
-                    alt="Emily Thompson photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="/img/testimonial-4.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="testimonials__avatar"
+                      src="/img/testimonial-4.jpg"
+                      alt="Emily Thompson photo"
+                      width="128px"
+                      height="128px"
+                    />
+                  </picture>
                   <h3 class="testimonials__name">Emily Thompson</h3>
-                  <img class="testimonials__stars" src="/icons/stars.svg" alt="5 star raiting"/>
+                  <img
+                    class="testimonials__stars"
+                    src="/icons/stars.svg"
+                    alt="5 star raiting"
+                  />
                   <p class="testimonials__review">
                     GlowGenics skincare products have given my skin a radiant,
                     glowing look that I adore. Using them makes me feel happier
@@ -342,13 +479,35 @@
             <div class="contact__badges">
               <ul class="contact__avatar-list">
                 <li class="contact__avatar">
-                  <img src="/img/customer-1.jpg" alt="customer avatar" />
+                  <picture>
+                    <source srcset="/img/customer-1.webp" type="image/webp" />
+                    <img
+                      src="/img/customer-1.jpg"
+                      alt="customer avatar"
+                      width="44px"
+                      height="44px"
+                    />
+                  </picture>
                 </li>
                 <li class="contact__avatar">
-                  <img src="/img/customer-2.jpg" alt="customer avatar" />
+                  <picture>
+                    <source srcset="/img/customer-2.webp" type="image/webp" />
+                    <img
+                      src="/img/customer-2.jpg"
+                      alt="customer avatar"
+                      width="44px"
+                      height="44px"
+                  /></picture>
                 </li>
                 <li class="contact__avatar">
-                  <img src="/img/customer-3.jpg" alt="customer avatar" />
+                  <picture>
+                    <source srcset="/img/customer-3.webp" type="image/webp" />
+                    <img
+                      src="/img/customer-3.jpg"
+                      alt="customer avatar"
+                      width="44px"
+                      height="44px"
+                  /></picture>
                 </li>
                 <li class="contact__avatar contact__avatar--empty">5K+</li>
               </ul>
@@ -398,6 +557,8 @@
                   class="button-icon"
                   src="/icons/send.svg"
                   alt="send icon"
+                  width="16px"
+                  height="16px"
                 />
               </button>
             </form>
@@ -428,6 +589,8 @@
                   class="button-icon"
                   src="/icons/send.svg"
                   alt="send icon"
+                  width="16px"
+                  height="16px"
                 />
               </button>
             </div>
@@ -449,15 +612,38 @@
             <a href="#contact">Contact Us</a>
           </div>
           <div class="footer__socials">
-            <a href="#"><img src="/icons/facebook.svg" alt="facebook icon" /></a>
-            <a href="#"><img src="/icons/twitter.svg" alt="twitter icon" /></a>
-            <a href="#"><img src="/icons/youtube.svg" alt="youtube icon" /></a>
+            <a href="#"
+              ><img
+                src="/icons/facebook.svg"
+                alt="facebook icon"
+                width="24px"
+                height="24px"
+            /></a>
+            <a href="#"
+              ><img
+                src="/icons/twitter.svg"
+                alt="twitter icon"
+                width="24px"
+                height="24px"
+            /></a>
+            <a href="#"
+              ><img
+                src="/icons/youtube.svg"
+                alt="youtube icon"
+                width="24px"
+                height="24px"
+            /></a>
           </div>
         </div>
         <div class="footer__bottom">
           <p>© 2024 InterfaceMage. All rights reserved.</p>
           <a class="footer__logo" href="#">
-            <img src="/icons/logo.svg" alt="GlowGenics logo" />
+            <img
+              src="/icons/logo.svg"
+              alt="GlowGenics logo"
+              width="182px"
+              height="80px"
+            />
           </a>
           <div class="links footer__policies">
             <a href="#">Terms Of Service</a>
