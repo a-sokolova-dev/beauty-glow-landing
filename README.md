@@ -9,13 +9,11 @@
 > Preview generated with [pika.style](https://pika.style/).
 
 [web-url]: https://a-sokolova-dev.github.io/beauty-glow-landing/
-[SCSS]: https://sass-lang.com/
+[Sass]: https://sass-lang.com/
 
 ## 🎯 Lighthouse Metrics
 
-<p align="center">
-  <img src="lighthouse.gif" alt="animated" />
-</p>
+![](lighthouse.gif)
 
 ## 🛠️ Technologies
 
