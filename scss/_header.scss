@@ -9,7 +9,7 @@
     background-color: var(--c-neutral-white);
     opacity: 0;
 
-     /* Force closing the menu on desktop */
+    /* Force closing the menu on desktop */
     @include breakpoint-up(large) {
       visibility: hidden !important;
     }
@@ -24,8 +24,8 @@
 
   &__logo {
     img {
-      width: 9.5rem;
-      height: 4.4rem;
+      width: 9.375rem;
+      height: 4.125rem;
     }
   }
 
@@ -44,7 +44,7 @@
       }
     }
   }
-  
+
   /* Hamburger Open Styles */
   &.open {
     .header__toggle {
@@ -61,7 +61,7 @@
       }
     }
   }
-  
+
   &__menu {
     position: absolute;
     top: 0;
