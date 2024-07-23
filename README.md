@@ -1,15 +1,16 @@
 # [beauty-glow-landing][web-url]
 
-[Beauty website][web-url] built with [Sass] and JavaScript.
+[Beauty website][web-url] built with [Sass] and JavaScript using [BEM] methodology.
+
+[web-url]: https://a-sokolova-dev.github.io/beauty-glow-landing/
+[Sass]: https://sass-lang.com/
+[BEM]: https://getbem.com/
 
 ## 🚀 Preview
 
 ![preview](preview.png)
 
 > Preview generated with [pika.style](https://pika.style/).
-
-[web-url]: https://a-sokolova-dev.github.io/beauty-glow-landing/
-[Sass]: https://sass-lang.com/
 
 ## 🎯 Lighthouse Metrics
 
@@ -44,7 +45,7 @@ npm install
 ### Run the project
 
 ```bash
-npm dev
+npm run dev
 ```
 
 Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
